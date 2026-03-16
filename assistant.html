@@ -2,41 +2,108 @@
 <html>
 <head>
 <style>
-  /* [Your existing styles remain exactly the same to preserve the SweetRush UI] */
   body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 10px; background: transparent; }
+  
   .assistant-card {
-    background: #FFFFFF; border-radius: 28px; width: 500px; height: 700px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 2px solid #f0f0f0;
-    position: relative; display: flex; flex-direction: column; overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 28px;
+    width: 500px;
+    height: 700px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 2px solid #f0f0f0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
+
+  /* SweetRush Rainbow Top Border */
   .assistant-card::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px;
-    background: linear-gradient(90deg, #4A1D7A, #BA5C2D, #517B27, #007C7C); z-index: 10;
+    background: linear-gradient(90deg, #4A1D7A, #BA5C2D, #517B27, #007C7C);
+    z-index: 10;
   }
-  .header { display: flex; align-items: center; justify-content: center; padding: 25px 20px 15px; background: white; border-bottom: 1px solid #f0f0f0; }
+
+  .header { 
+    display: flex; align-items: center; justify-content: center; padding: 25px 20px 15px;
+    background: white; border-bottom: 1px solid #f0f0f0;
+  }
   .header h2 { font-size: 18px; color: #753599; margin: 0; font-weight: 700; }
-  #chat-history { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 15px; background: #fff; }
-  .bubble { padding: 12px 16px; border-radius: 18px; font-size: 14px; line-height: 1.5; max-width: 85%; }
+
+  #chat-history {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+  }
+
+  /* Chat Bubbles */
+  .bubble { padding: 12px 16px; border-radius: 18px; font-size: 14px; line-height: 1.5; max-width: 85%; position: relative; }
   .bot-msg { background: #f1f3f4; color: #121B21; align-self: flex-start; border-bottom-left-radius: 4px; }
   .user-msg { background: #4A1D7A; color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
-  .resource-link { display: block; margin-top: 10px; color: #4A1D7A; font-weight: bold; text-decoration: none; border: 1px solid #4A1D7A; padding: 8px; border-radius: 8px; text-align: center; }
-  .input-container { padding: 15px; background: white; border-top: 1px solid #eee; display: flex; align-items: center; gap: 8px; }
-  input { flex: 1; padding: 12px 15px; border-radius: 25px; border: 1.5px solid #E0E0E0; font-size: 14px; outline: none; }
-  .search-btn { background: none; border: none; cursor: pointer; padding: 0; display: flex; }
-  .search-btn img { width: 32px; height: 32px; transition: transform 0.2s ease; }
-  .search-btn:hover img { transform: scale(1.15); opacity: 0.8; }
+  
+  /* Labels for Data Categories */
+  .category-tag { 
+    font-size: 10px; text-transform: uppercase; font-weight: 800; 
+    color: #753599; margin-bottom: 4px; display: block; letter-spacing: 0.5px; 
+  }
+
+  .resource-link { 
+    display: block; margin-top: 10px; color: #4A1D7A; font-weight: bold; 
+    text-decoration: none; border: 1px solid #4A1D7A; padding: 8px; 
+    border-radius: 8px; text-align: center; transition: all 0.2s ease;
+  }
+  .resource-link:hover { background: #4A1D7A; color: white; }
+
+  /* Bottom Bar */
+  .input-container {
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 1.5px solid #E0E0E0;
+    font-size: 14px;
+    outline: none;
+  }
+
+  /* Logo Search Button */
+  .search-btn {
+    background: none; border: none; cursor: pointer; padding: 0; display: flex; align-items: center; outline: none;
+  }
+  .search-btn img { 
+    width: 32px; height: 32px; 
+    transition: transform 0.2s ease, opacity 0.2s ease; 
+  }
+  .search-btn:hover img { 
+    transform: scale(1.2); 
+    opacity: 0.8; 
+  }
 </style>
 </head>
 <body>
 
 <div class="assistant-card">
-  <div class="header"><h2>Win Engine Assistant</h2></div>
-  <div id="chat-history">
-    <div class="bubble bot-msg">Welcome to the Win Engine. I'm connected to our library of 400+ case studies. How can I help you today?</div>
+  <div class="header">
+    <h2>Win Engine Assistant</h2>
   </div>
+
+  <div id="chat-history">
+    <div class="bubble bot-msg">Welcome to the Win Engine. I can help you find Case Studies, Design Resources, or Client Communication tips. What are we winning today?</div>
+  </div>
+
   <div class="input-container">
-    <input type="text" id="userInput" placeholder="Ask about a client or topic...">
-    <button class="search-btn" onclick="processQuery()">
+    <input type="text" id="userInput" placeholder="Ask a question...">
+    <button id="searchBtn" class="search-btn">
       <img src="https://assets.storydoc.com/15aa8fefe03b131b2d6334b9551d49a7/b018fd41-cf39-4174-b468-c7b4ad3153d2" alt="Search">
     </button>
   </div>
@@ -45,50 +112,62 @@
 <script>
   let strategicLibrary = [];
 
-  // BACKEND: FETCH DATA FROM GITHUB JSON
-  // Replace the URL below with your actual RAW GitHub link for library.json
-  const JSON_URL = 'https://raw.githubusercontent.com/jeanniehitchcock/win-engine-assets/main/library.json';
+  // CONFIGURATION: These links point to the "main" branch for auto-updates
+  const DATA_SOURCES = [
+    'https://raw.githubusercontent.com/jeanniehitchcock/win-engine-assets/main/cases.json',
+    'https://raw.githubusercontent.com/jeanniehitchcock/win-engine-assets/main/design.json',
+    'https://raw.githubusercontent.com/jeanniehitchcock/win-engine-assets/main/comm.json'
+  ];
 
-  async function loadLibrary() {
+  // Fetch multiple JSON files simultaneously
+  async function loadAllData() {
     try {
-      const response = await fetch(JSON_URL);
-      strategicLibrary = await response.json();
-      console.log("Library loaded successfully!");
+      const allFetches = DATA_SOURCES.map(url => 
+        fetch(url + '?nocache=' + new Date().getTime()) // Prevents browser caching old versions
+        .then(res => res.json())
+      );
+      const results = await Promise.all(allFetches);
+      strategicLibrary = results.flat(); 
+      console.log("Win Engine Ready: " + strategicLibrary.length + " resources loaded.");
     } catch (error) {
-      console.error("Error loading library:", error);
+      console.error("Critical: Could not load data. Check GitHub file names and JSON formatting.", error);
     }
   }
 
-  // Load the library as soon as the page opens
-  loadLibrary();
+  loadAllData();
 
   function processQuery() {
     const input = document.getElementById('userInput');
     const history = document.getElementById('chat-history');
     const query = input.value.toLowerCase().trim();
-    if(!query || strategicLibrary.length === 0) return;
+    
+    if(!query) return;
 
+    // Show User Input
     history.innerHTML += `<div class="bubble user-msg">${input.value}</div>`;
     input.value = '';
     history.scrollTop = history.scrollHeight;
 
+    // Artificial delay for "bot thinking" feel
     setTimeout(() => {
-      // Logic: Filter library for ANY tag match
+      // Search logic: Find entries where the query matches a tag
       const matches = strategicLibrary.filter(item => 
-        item.tags.some(tag => query.includes(tag))
+        item.tags.some(tag => query.includes(tag.toLowerCase()))
       );
       
       let botResponse = "";
       if(matches.length > 0) {
-        // Just show the best match or the first few
-        const bestMatch = matches[0];
+        // We show the first/best match
+        const best = matches[0];
         botResponse = `
           <div class="bubble bot-msg">
-            I found a great example: <strong>${bestMatch.title}</strong>. ${bestMatch.advice}
-            <a href="${bestMatch.link}" target="_blank" class="resource-link">${bestMatch.linkText} ➔</a>
+            <span class="category-tag">${best.category}</span>
+            I found this for you: <strong>${best.title}</strong>.<br><br>
+            ${best.advice}
+            <a href="${best.link}" target="_blank" class="resource-link">${best.linkText} ➔</a>
           </div>`;
       } else {
-        botResponse = `<div class="bubble bot-msg">I couldn't find a specific case study for that. Try asking about a broad topic like 'Healthcare', 'Retail', or 'XR'.</div>`;
+        botResponse = `<div class="bubble bot-msg">I couldn't find a specific resource for that. Try searching for topics like 'Hilton', 'Accessibility', 'Retail', or 'Storyboard'.</div>`;
       }
 
       history.innerHTML += botResponse;
@@ -96,91 +175,12 @@
     }, 600);
   }
 
-  document.getElementById('userInput').addEventListener('keypress', (e) => { if(e.key === 'Enter') processQuery(); });
+  // Event Listeners for Interaction
+  document.getElementById('searchBtn').addEventListener('click', processQuery);
+  document.getElementById('userInput').addEventListener('keypress', (e) => { 
+    if(e.key === 'Enter') processQuery(); 
+  });
 </script>
-</body>
-</html>  <div class="input-container">
-    <input type="text" id="userInput" placeholder="Ask a question...">
-    <button class="search-btn" onclick="processQuery()">
-      <img src="https://assets.storydoc.com/15aa8fefe03b131b2d6334b9551d49a7/b018fd41-cf39-4174-b468-c7b4ad3153d2" alt="Search">
-    </button>
-  </div>
-</div>
 
-<script>
-  /* ============================================================
-     🛠️ BACKEND CONFIGURATION SECTION
-     SAs can edit the persona, welcome message, and resources here. When adding tags, use the "3-tag Rule" 1. The Action (e.g., scale), 2. The Subject (e.g., global), 3. The Snyonym (e.g. international) 
-     ============================================================ */
-  
-  const BOT_CONFIG = {
-    persona: "You are a senior SweetRush Solution Architect. You give calm, professional, and dynamic advice.",
-    welcomeMessage: "Welcome to the Win Engine. I can help with case studies, difficult client scenarios, or accessibility guidance. How can I support your strategy today?",
-    fallbackMessage: "That's a complex strategic challenge! While I don't have a specific resource for that yet, check our general Proposal Examples for a simplified framework, or ask a peer for a real-time brainstorm.",
-  };
-
-  const STRATEGIC_RESOURCES = [
-    { 
-      tags: ["hours", "time", "weekend", "contact", "boundaries"], 
-      advice: "Maintaining boundaries is key to a calm demeanor. Politely acknowledge the message but state that you will provide a full response during business hours.",
-      linkText: "View our Client Communication Guide",
-      link: "/objections" 
-    },
-    { 
-      tags: ["case study", "success", "example", "portfolio"], 
-      advice: "Proof-points build trust. Always tailor the example to the client's specific industry sector to show strategic fit.",
-      linkText: "Open Case Study Scout",
-      link: "/case-study-scout" 
-    },
-    { 
-      tags: ["accessibility", "wcag", "inclusive"], 
-      advice: "We embody inclusivity. Our solutions follow WCAG 2.1 standards to ensure brilliance for every learner.",
-      linkText: "Accessibility Guidance",
-      link: "/accessibility" 
-    }
-  ];
-
-  /* ============================================================
-     🤖 BOT LOGIC (SAs do not need to edit below this line)
-     ============================================================ */
-
-  // Initialize Welcome Message
-  document.getElementById('welcome-msg').innerText = BOT_CONFIG.welcomeMessage;
-
-  function processQuery() {
-    const input = document.getElementById('userInput');
-    const history = document.getElementById('chat-history');
-    const query = input.value.toLowerCase().trim();
-    if(!query) return;
-
-    // Add User Bubble
-    history.innerHTML += `<div class="bubble user-msg">${input.value}</div>`;
-    input.value = '';
-    history.scrollTop = history.scrollHeight;
-
-    setTimeout(() => {
-      // Logic: Search for a match in the tags array
-      const match = STRATEGIC_RESOURCES.find(item => 
-        item.tags.some(tag => query.includes(tag))
-      );
-      
-      let botResponse = "";
-      if(match) {
-        botResponse = `
-          <div class="bubble bot-msg">
-            ${match.advice} 
-            <a href="${match.link}" class="resource-link">${match.linkText} ➔</a>
-          </div>`;
-      } else {
-        botResponse = `<div class="bubble bot-msg">${BOT_CONFIG.fallbackMessage}</div>`;
-      }
-
-      history.innerHTML += botResponse;
-      history.scrollTop = history.scrollHeight;
-    }, 600);
-  }
-
-  document.getElementById('userInput').addEventListener('keypress', (e) => { if(e.key === 'Enter') processQuery(); });
-</script>
 </body>
 </html>
