@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-  /* STYLING REMAINS EXACTLY THE SAME TO PRESERVE YOUR BRANDING */
+  /* [Your existing styles remain exactly the same to preserve the SweetRush UI] */
   body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 10px; background: transparent; }
   .assistant-card {
     background: #FFFFFF; border-radius: 28px; width: 500px; height: 700px;
@@ -32,9 +32,74 @@
 <div class="assistant-card">
   <div class="header"><h2>Win Engine Assistant</h2></div>
   <div id="chat-history">
-    <div id="welcome-msg" class="bubble bot-msg"></div>
+    <div class="bubble bot-msg">Welcome to the Win Engine. I'm connected to our library of 400+ case studies. How can I help you today?</div>
   </div>
   <div class="input-container">
+    <input type="text" id="userInput" placeholder="Ask about a client or topic...">
+    <button class="search-btn" onclick="processQuery()">
+      <img src="https://assets.storydoc.com/15aa8fefe03b131b2d6334b9551d49a7/b018fd41-cf39-4174-b468-c7b4ad3153d2" alt="Search">
+    </button>
+  </div>
+</div>
+
+<script>
+  let strategicLibrary = [];
+
+  // BACKEND: FETCH DATA FROM GITHUB JSON
+  // Replace the URL below with your actual RAW GitHub link for library.json
+  const JSON_URL = 'https://raw.githubusercontent.com/jeanniehitchcock/win-engine-assets/main/library.json';
+
+  async function loadLibrary() {
+    try {
+      const response = await fetch(JSON_URL);
+      strategicLibrary = await response.json();
+      console.log("Library loaded successfully!");
+    } catch (error) {
+      console.error("Error loading library:", error);
+    }
+  }
+
+  // Load the library as soon as the page opens
+  loadLibrary();
+
+  function processQuery() {
+    const input = document.getElementById('userInput');
+    const history = document.getElementById('chat-history');
+    const query = input.value.toLowerCase().trim();
+    if(!query || strategicLibrary.length === 0) return;
+
+    history.innerHTML += `<div class="bubble user-msg">${input.value}</div>`;
+    input.value = '';
+    history.scrollTop = history.scrollHeight;
+
+    setTimeout(() => {
+      // Logic: Filter library for ANY tag match
+      const matches = strategicLibrary.filter(item => 
+        item.tags.some(tag => query.includes(tag))
+      );
+      
+      let botResponse = "";
+      if(matches.length > 0) {
+        // Just show the best match or the first few
+        const bestMatch = matches[0];
+        botResponse = `
+          <div class="bubble bot-msg">
+            I found a great example: <strong>${bestMatch.title}</strong>. ${bestMatch.advice}
+            <a href="${bestMatch.link}" target="_blank" class="resource-link">${bestMatch.linkText} ➔</a>
+          </div>`;
+      } else {
+        botResponse = `<div class="bubble bot-msg">I couldn't find a specific case study for that. Try asking about a broad topic like 'Healthcare', 'Retail', or 'XR'.</div>`;
+      }
+
+      history.innerHTML += botResponse;
+      history.scrollTop = history.scrollHeight;
+    }, 600);
+  }
+
+  document.getElementById('userInput').addEventListener('keypress', (e) => { if(e.key === 'Enter') processQuery(); });
+</script>
+</body>
+</html>  <div class="input-container">
     <input type="text" id="userInput" placeholder="Ask a question...">
     <button class="search-btn" onclick="processQuery()">
       <img src="https://assets.storydoc.com/15aa8fefe03b131b2d6334b9551d49a7/b018fd41-cf39-4174-b468-c7b4ad3153d2" alt="Search">
