@@ -1,0 +1,23 @@
+[
+  {
+    "tags": ["hilton", "xr", "vr", "hospitality", "empathy"],
+    "title": "Hilton Business: Make it Right",
+    "advice": "Scaling projects globally is a SweetRush specialty. For Hilton, we used XR to teach empathy and hands-on service skills.",
+    "linkText": "View Hilton XR Case Study",
+    "link": "https://www.sweetrush.com/case-studies/hilton-xr/"
+  },
+  {
+    "tags": ["harley-davidson", "retail", "sales", "product knowledge"],
+    "title": "Harley-Davidson Sales Training",
+    "advice": "For retail and product knowledge, we focus on scenarios and gamification to drive sales performance.",
+    "linkText": "View Harley-Davidson Case Study",
+    "link": "/harley-davidson"
+  },
+  {
+    "tags": ["hartford", "healthcare", "values", "culture"],
+    "title": "Hartford Healthcare Values",
+    "advice": "Values-based interaction and culture-building are critical in healthcare settings.",
+    "linkText": "View Hartford Healthcare Study",
+    "link": "/hartford-healthcare"
+  }
+]
