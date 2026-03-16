@@ -1,23 +1,202 @@
 [
   {
+    "category": "Case Study",
+    "tags": ["race forward", "nonprofit", "deib", "social services", "organizational change"],
+    "title": "Race Forward: GARE 2025",
+    "advice": "This project focuses on organizational change within the Government Alliance on Race & Equity.",
+    "linkText": "View Portfolio ➔",
+    "link": "https://docs.google.com/presentation/d/14VZrgceaFSKi5Fyp-UJ27MXSdIl9QEWvfm0oqBQmgjU/edit#slide=id.g1f3aa55c480_6_784"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["harley-davidson", "retail", "product knowledge", "auto", "sales", "gamification"],
+    "title": "Harley-Davidson Sales Nanos",
+    "advice": "A retail-focused project using gamification and storytelling to drive dealership product knowledge.",
+    "linkText": "View Portfolio ➔",
+    "link": "https://confluence.sweetrush.com/display/HDA/Harley-Davidson+Sales+Nanos+Project+Portfolio"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hartford healthcare", "healthcare", "values", "customer service", "culture"],
+    "title": "Hartford Healthcare: Values-based Interaction",
+    "advice": "This healthcare initiative focuses on values-based interaction and culture building using branching assessments.",
+    "linkText": "View Storyline Demo ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/hhc_values_based_interaction_v2_20220621_21_154953/story.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hca", "onboarding", "technical training", "accessibility"],
+    "title": "HCA: Brand Immersion & Technical Training",
+    "advice": "A comprehensive onboarding program that also covers technical training with a focus on accessibility.",
+    "linkText": "View Portfolio ➔",
+    "link": "https://confluence.sweetrush.com/display/HCA/HCA:+Brand+Immersion+Onboarding+and+Technical+training+2024+Project+Portfolio"
+  },
+  {
+    "category": "Case Study",
     "tags": ["hilton", "xr", "vr", "hospitality", "empathy"],
-    "title": "Hilton Business: Make it Right",
-    "advice": "Scaling projects globally is a SweetRush specialty. For Hilton, we used XR to teach empathy and hands-on service skills.",
-    "linkText": "View Hilton XR Case Study",
-    "link": "https://www.sweetrush.com/case-studies/hilton-xr/"
+    "title": "Hilton Business: XR & VR Training",
+    "advice": "Award-winning XR/VR training designed to build empathy and hands-on skills for Hilton team members.",
+    "linkText": "Read the Hilton VR Story ➔",
+    "link": "https://tech.facebook.com/reality-labs/2020/3/a-new-perspective-on-hospitality-how-hilton-uses-vr-to-teach-empathy/"
   },
   {
-    "tags": ["harley-davidson", "retail", "sales", "product knowledge"],
-    "title": "Harley-Davidson Sales Training",
-    "advice": "For retail and product knowledge, we focus on scenarios and gamification to drive sales performance.",
-    "linkText": "View Harley-Davidson Case Study",
-    "link": "/harley-davidson"
+    "category": "Case Study",
+    "tags": ["hilton", "brighthearted", "culture", "hospitality"],
+    "title": "Hilton: I am Brighthearted",
+    "advice": "A culture-focused training program designed to drive the 'Brighthearted' hospitality mindset.",
+    "linkText": "View Demo ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/wbt7_i_am_brighthearted_20180423_45_142114/index.html?lms=1"
   },
   {
-    "tags": ["hartford", "healthcare", "values", "culture"],
-    "title": "Hartford Healthcare Values",
-    "advice": "Values-based interaction and culture-building are critical in healthcare settings.",
-    "linkText": "View Hartford Healthcare Study",
-    "link": "/hartford-healthcare"
+    "category": "Case Study",
+    "tags": ["hilton", "canopy", "blueprint", "hospitality"],
+    "title": "Hilton: Canopy Blueprint & Solution",
+    "advice": "Detailed blueprinting and solution-oriented design for Hilton's Canopy brand.",
+    "linkText": "View Blueprint ➔",
+    "link": "https://drive.google.com/file/d/11JDWwge1SzWrp8V2kGU7XCsz5un_gM_z/view?usp=sharing"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "modern lifestyle", "service"],
+    "title": "Hilton: Modern Lifestyle & Service",
+    "advice": "A service-oriented training focused on modern lifestyle hospitality standards.",
+    "linkText": "View Case Study ➔",
+    "link": "https://www.sweetrush.com/case-studies/hilton-modern-lifestyle-service/"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "connected room", "vr", "video"],
+    "title": "Hilton: Connected Room VR",
+    "advice": "Using VR and video to train staff on Hilton's innovative Connected Room technology.",
+    "linkText": "View VR Project ➔",
+    "link": "https://confluence.sweetrush.com/display/HDA/Hilton+Connected+Rooms+VR+Project+Portfolio"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "inclusive guest experience", "behavior", "smart brevity"],
+    "title": "Hilton: Inclusive Guest Experience",
+    "advice": "Behavior-focused training using 'Smart Brevity' to create intentionally inclusive guest experiences.",
+    "linkText": "View Project ➔",
+    "link": "https://docs.google.com/presentation/d/14VZrgceaFSKi5Fyp-UJ27MXSdIl9QEWvfm0oqBQmgjU/edit#slide=id.g1f3aa55c480_6_523"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "make it right", "ai", "feedback", "nlp"],
+    "title": "Hilton Customer Promise: Make it Right",
+    "advice": "A cutting-edge application using AI and Natural Language Processing for realistic feedback on soft skills.",
+    "linkText": "View AI Case Study ➔",
+    "link": "https://www.sweetrush.com/case-studies/general-ai-nlp-soft-skills-hilton/"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "cyber security", "it", "security"],
+    "title": "Hilton: Cyber Security Continuum",
+    "advice": "An IT security-focused learning path covering the full cyber security continuum.",
+    "linkText": "View Security Training ➔",
+    "link": "https://docs.google.com/presentation/d/14VZrgceaFSKi5Fyp-UJ27MXSdIl9QEWvfm0oqBQmgjU/edit#slide=id.g314793de76f_1_101"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "doubletree", "onboarding", "culture"],
+    "title": "DoubleTree by Hilton: Onboarding",
+    "advice": "Focuses on the specific cultural belonging and service standards of the DoubleTree brand.",
+    "linkText": "View DoubleTree WBT ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/doubletree_wbt_english_20180717_11_151624/index.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "home2 suites", "hospitality", "chatbots"],
+    "title": "Hilton: Home2 Suites Chatbot",
+    "advice": "Utilizing chatbot technology to support training and performance for Home2 Suites staff.",
+    "linkText": "View Project ➔",
+    "link": "https://docs.google.com/presentation/d/14VZrgceaFSKi5Fyp-UJ27MXSdIl9QEWvfm0oqBQmgjU/edit#slide=id.g2ae5c30f60c_0_180"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "housekeeping", "ipad", "job aid", "sop"],
+    "title": "Hilton: Housekeeping iBook & Support",
+    "advice": "Digital job aids and SOP manuals delivered via iPad for housekeeping staff support.",
+    "linkText": "View Manuals ➔",
+    "link": "https://drive.google.com/file/d/1A8m9CBo5Wrk_Bowt42zodaJtZ3oH-eFP/view?usp=sharing"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "spa", "toolkit", "job aid"],
+    "title": "Hilton: Spa Toolkit",
+    "advice": "A comprehensive toolkit and job aid system for Hilton's luxury spa operations.",
+    "linkText": "View Toolkit ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/hilton_spa_toolkit_20150223_7_132755/index.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "lead with warmth", "social", "service"],
+    "title": "Hilton: Lead with Warmth",
+    "advice": "Focuses on social skills and service warmth through scenario-based learning.",
+    "linkText": "View Warmth Scenarios ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/lead_with_warmth__warmth_scenarios_20240406_18_085603/index.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "pet friendly", "hospitality"],
+    "title": "Hilton: Pet Friendly Hotels",
+    "advice": "Training on Hilton's pet-friendly standards and guest experience.",
+    "linkText": "Watch Video ➔",
+    "link": "https://vimeo.com/709305297/3a8febde6a"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "concierge", "personal concierge"],
+    "title": "Hilton: Personal Concierge training",
+    "advice": "High-touch service training for Hilton's premium concierge roles.",
+    "linkText": "View Training ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/personal_concierge_v2_20220608_21_154953/story.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "embassy suites", "hospitality"],
+    "title": "Hilton: Embassy Suites Experience",
+    "advice": "Brand-specific training for Embassy Suites by Hilton.",
+    "linkText": "View Case Study ➔",
+    "link": "https://www.sweetrush.com/case-studies/embassy-suites-hilton/"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "hampton inn", "pre-shift", "pdf"],
+    "title": "Hampton Inn: Pre-Shift Support",
+    "advice": "Downloadable PDF toolkits for Hampton Inn pre-shift huddles.",
+    "linkText": "Download Toolkit ➔",
+    "link": "https://drive.google.com/file/d/11JDWwge1SzWrp8V2kGU7XCsz5un_gM_z/view?usp=sharing"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hilton", "trade sanctuary", "wcag", "inclusive"],
+    "title": "Hilton: Trade Sanctuary 2024",
+    "advice": "An inclusive project meeting WCAG 2.1 AA standards for global accessibility.",
+    "linkText": "View Project ➔",
+    "link": "https://confluence.sweetrush.com/display/HA/Hilton+Trade+Sanctuary+2024+Project+Portfolio"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["honda", "philosophy", "efficiency", "management"],
+    "title": "Honda: Philosophy & Efficiency",
+    "advice": "Focuses on Honda's core management philosophies and operational efficiency.",
+    "linkText": "View Training ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/honda_philosophy_20170406_28_114251/index.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["hrc", "human rights", "unconscious bias", "deib"],
+    "title": "Human Rights Campaign (HRC): Unconscious Bias",
+    "advice": "A critical program for HRC focusing on mitigating unconscious bias in the workplace.",
+    "linkText": "View Journey ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/hrc_unconscious_bias_20220210_47_173021/index.html"
+  },
+  {
+    "category": "Case Study",
+    "tags": ["intel", "client 360", "tech", "sales"],
+    "title": "Intel: Client 360",
+    "advice": "Technical sales training providing a 360-degree view of the Intel client ecosystem.",
+    "linkText": "View Training ➔",
+    "link": "https://cocoa.sweetrush.com/svn/builds/introduction_to_client_360_20171020_16_111416/index.html?lms=1"
   }
 ]
