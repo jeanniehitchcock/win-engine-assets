@@ -1,0 +1,11 @@
+// Example for design.json
+[
+  {
+    "category": "Design Resource",
+    "tags": ["storyboard", "template"],
+    "title": "Master Storyboard Template",
+    "advice": "Our standard storyboard ensures all technical requirements are captured before production.",
+    "linkText": "Download Template",
+    "link": "https://..."
+  }
+]
