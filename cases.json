@@ -165,38 +165,4 @@
     "title": "Hampton Inn: Pre-Shift Support",
     "advice": "Downloadable PDF toolkits for Hampton Inn pre-shift huddles.",
     "linkText": "Download Toolkit ➔",
-    "link": "https://drive.google.com/file/d/11JDWwge1SzWrp8V2kGU7XCsz5un_gM_z/view?usp=sharing"
-  },
-  {
-    "category": "Case Study",
-    "tags": ["hilton", "trade sanctuary", "wcag", "inclusive"],
-    "title": "Hilton: Trade Sanctuary 2024",
-    "advice": "An inclusive project meeting WCAG 2.1 AA standards for global accessibility.",
-    "linkText": "View Project ➔",
-    "link": "https://confluence.sweetrush.com/display/HA/Hilton+Trade+Sanctuary+2024+Project+Portfolio"
-  },
-  {
-    "category": "Case Study",
-    "tags": ["honda", "philosophy", "efficiency", "management"],
-    "title": "Honda: Philosophy & Efficiency",
-    "advice": "Focuses on Honda's core management philosophies and operational efficiency.",
-    "linkText": "View Training ➔",
-    "link": "https://cocoa.sweetrush.com/svn/builds/honda_philosophy_20170406_28_114251/index.html"
-  },
-  {
-    "category": "Case Study",
-    "tags": ["hrc", "human rights", "unconscious bias", "deib"],
-    "title": "Human Rights Campaign (HRC): Unconscious Bias",
-    "advice": "A critical program for HRC focusing on mitigating unconscious bias in the workplace.",
-    "linkText": "View Journey ➔",
-    "link": "https://cocoa.sweetrush.com/svn/builds/hrc_unconscious_bias_20220210_47_173021/index.html"
-  },
-  {
-    "category": "Case Study",
-    "tags": ["intel", "client 360", "tech", "sales"],
-    "title": "Intel: Client 360",
-    "advice": "Technical sales training providing a 360-degree view of the Intel client ecosystem.",
-    "linkText": "View Training ➔",
-    "link": "https://cocoa.sweetrush.com/svn/builds/introduction_to_client_360_20171020_16_111416/index.html?lms=1"
-  }
-]
+    "link
