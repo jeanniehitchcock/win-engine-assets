@@ -405,5 +405,21 @@
     "Slide Link": "https://docs.google.com/presentation/d/1Zu5lww5Vbee9dCEu1W0oevrY3BtzhB5r5g83enObZwU/edit?slide=id.g3121dbcb314_0_428",
     "Demo Link": "https://cocoa.sweetrush.com/svn/builds/aws_inclusive_generative_ai_elearning_for_sales_and_marketing__english__20240528_29_042021/story.html",
     "Related Links": ""
+  },
+  {
+    "Timestamp": "2026-03-17T21:18:02.672Z",
+    "Client": "COOL CLIENT",
+    "Project": "COOL PROJECT",
+    "Slide Type": "CASE STUDY",
+    "Slide Focus": "ELEARNING",
+    "Service Line": "CUSTOM LEARNING",
+    "Tags": [
+      "cool",
+      "super cool",
+      "awesome"
+    ],
+    "advice": "This is a really cool case study.",
+    "Slide Link": "www.google.com",
+    "Demo Link": "www.google.com"
   }
 ]
