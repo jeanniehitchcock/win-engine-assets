@@ -405,17 +405,5 @@
     "Slide Link": "https://docs.google.com/presentation/d/1Zu5lww5Vbee9dCEu1W0oevrY3BtzhB5r5g83enObZwU/edit?slide=id.g3121dbcb314_0_428",
     "Demo Link": "https://cocoa.sweetrush.com/svn/builds/aws_inclusive_generative_ai_elearning_for_sales_and_marketing__english__20240528_29_042021/story.html",
     "Related Links": ""
-  },
-  {
-    "Timestamp": "2026-03-17T21:06:10.823Z",
-    "Client": "COOL CLIENT",
-    "Project": "COOL PROJECT",
-    "Slide Type": "CASE STUDY",
-    "Slide Focus": "eLearning",
-    "Service Line": "Custom Learning",
-    "Tags (separate by comma)": "cool, super cool, jeannie test",
-    "Advice (description of case study - this is how the chat bot will describe the case to the user)": "This is a really cool case study.",
-    "Slide Link": "www.google.com",
-    "Demo Link": "www.google.com"
   }
 ]
