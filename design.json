@@ -1,10 +1,10 @@
 [
   {
     "category": "Design Resource",
-    "tags": ["storyboard", "template"],
-    "title": "Master Storyboard Template",
-    "advice": "Our standard storyboard ensures all technical requirements are captured before production.",
-    "linkText": "Download Template",
-    "link": "https://..."
+    "tags": ["style guide", "color", "color palette", "slide dividers", "Closing", "about us", "SweetRush",  "template", "icons", "graphics", "animations"],
+    "title": "Style guide, About Us, Slide Dividers, Closing",
+    "advice": "This is our standard SweetRush style guide and template. You'll find icons, slide dividers, color palettes, and more.",
+    "linkText": "Open Template",
+    "link": "https://docs.google.com/presentation/d/17g7ZamaXQJQQ66ShBOK7Vk-8AZlYMXcv9QJ68WCt_to/edit?slide=id.g1ee97bf5201_0_1667#slide=id.g1ee97bf5201_0_1667"
   }
 ]
