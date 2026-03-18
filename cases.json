@@ -421,5 +421,21 @@
     "advice": "This is a really cool case study.",
     "Slide Link": "www.google.com",
     "Demo Link": "www.google.com"
+  },
+  {
+    "Timestamp": "2026-03-18T18:34:42.393Z",
+    "Client": "COOL CLIENT",
+    "Project": "COOL PROJECT",
+    "Slide Type": "CASE STUDY",
+    "Slide Focus": "ELEARNING",
+    "Service Line": "CUSTOM LEARNING",
+    "Tags": [
+      "cool",
+      "really cool",
+      "awesome"
+    ],
+    "advice": "This is a really cool case for scaling globally.",
+    "Slide Link": "www.google.com",
+    "Demo Link": "www.google.com"
   }
 ]
